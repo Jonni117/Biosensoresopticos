@@ -10,9 +10,9 @@ files = [
     "raman paracetamol3SSM.xlsx"
 ]
 
-# Parámetros
-laser_wavelength_nm = 646.81  # Cambia según tu láser (ejemplo: 532 nm)
-laser_wavelength_cm = laser_wavelength_nm * 1e-7  # convertir nm -> cm
+
+laser_wavelength_nm = 646.81  
+laser_wavelength_cm = laser_wavelength_nm * 1e-7  
 
 def load_data_sheet(path):
     """Carga la hoja 'data' o la primera hoja. Devuelve DataFrame con columnas ['wavelength','intensity']."""
@@ -64,3 +64,4 @@ if __name__ == "__main__":
     
     plot_raman(dfs, labels)
     print("Listo.")
+
